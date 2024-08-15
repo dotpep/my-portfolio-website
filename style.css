@@ -185,14 +185,18 @@ section {
 
 .section__pic-container {
   display: flex;
-  margin: auto 2rem auto 0; /* Adjust the margin as needed */
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
 
 .section__pic-container img {
-  height: 320px;
-  width: 320px;
-  object-fit: cover;
   border-radius: 50%;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
 }
 
 .section__text {

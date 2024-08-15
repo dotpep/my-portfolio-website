@@ -16,7 +16,7 @@ www.portfolio.dotpep.xyz
 _________________________>>>>><<<<<_____________________ 
 replace portfolio.dotpep.xyz to your subdomain name.
 
-sudo mkdir /var/www/portfolio.dotpep.xyz
+sudo mkdir  
 sudo chown -R $USER:$USER /var/www/portfolio.dotpep.xyz
 sudo chmod -R 777 /var/www/portfolio.dotpep.xyz
 sudo chmod -R -f 777 /var/www/portfolio.dotpep.xyz
