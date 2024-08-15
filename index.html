@@ -10,18 +10,28 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <!--<div class="logo">Didar Kelgenbayev</div>-->
+      <div class="logo">
+        <span class="logo-name">Didar Kelgenbayev</span>
+        <p class="logo-subtext">career portfolio website</p>
+      </div>
+      
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <!--
+          TODO: make Ru, Eng sweaper
+          -->
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Didar Kelgenbayev</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -38,16 +48,25 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="Didar Kelgenbayev profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Didar Kelgenbayev</h1>
+        <p class="section__text__p2">Software Engineer and Backend Developer</p>
         <div class="btn-container">
+          <!-- TODO Add my real cv and resume -->
+
+          <!-- TODO button for view resume (not download) -->
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/my-resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/my-cv.pdf')"
           >
             Download CV
           </button>
@@ -55,33 +74,44 @@
             Contact Info
           </button>
         </div>
+
+        <br />
+
+        <p class="section__text__p1">My Socials</p>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="window.open('https://www.linkedin.com/in/didar-k', '_blank');"
           />
+          <!--
+            onclick="window.location.href='https://github.com/dotpep'"
+          -->
           <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="window.open('https://github.com/dotpep', '_blank');"
+        />
+        
         </div>
       </div>
     </section>
+
+    <!-- About Section -->
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <!--<div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
           />
-        </div>
+        </div>-->
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -91,7 +121,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>1+ years <br />Software Development & Freelance</p>
             </div>
             <div class="details-container">
               <img
@@ -100,18 +130,41 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>College Degree, 2020-2024 <br />B.Sc. Bachelors Degree, 2024-2027 <br />in Information Technology, Software Engineering & Information System</p>
             </div>
           </div>
           <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
+
+            <br />
+            <div class="about-text">
+              <p>
+                Greetings! My name is Didar Kelgenbayev, 
+                and I am a Software Engineer and Backend Developer based in Almaty, Kazakhstan. 
+                With a solid foundation in Computer Science and Information Technology, 
+                I am a generalist in the tech world and a tech-savvy professional 
+                with well-developed hard and soft skills.
+                <br />
+                <br />
+                My passion is implementing and maintaining backend side of web development, 
+                as well as exploring new technologies through hands-on experimentations 
+                with pet projects on my GitHub profile. 
+                I hold a 4-year College Degree in Software Engineering/Information System and, 
+                as of 2024, have entered IITU (МУИТ) University, 
+                one of the top 3 technology universities in my country.
+                <br />
+                <br />
+                With over a year of hands-on experience in Software Development, 
+                particularly in Backend Development, 
+                I have successfully handled freelance projects 
+                and personal pet projects by my own.
+              </p>
+            </div>
+            <br />
+
+            <p><a class="blue-link" href="https://github.com/dotpep?tab=repositories" target="_blank" rel="noopener noreferrer">
+              You can check all my documented projects on my GitHub profile in Repositories section by clikcing this link.
+            </a></p>
+
           </div>
         </div>
       </div>
@@ -122,13 +175,16 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <!--Experience Section-->
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Software Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -137,7 +193,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3>Python</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -148,8 +204,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                  <h3>Golang</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -159,7 +215,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
+                  <h3>C# & Java</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -174,66 +230,7 @@
                   <p>Basic</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -245,6 +242,227 @@
                   <p>Intermediate</p>
                 </div>
               </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bash & Powershell</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL & MySQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ORMs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML/CSS & Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WPF & WindowForms</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Setup CI/CD & Pre-commit</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RESTful API</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ubuntu & Linux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django & DRF</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django ninja</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FastAPI</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Golang Chi</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Celery</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Redis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Nginx</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unit Testing & API Testing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
             </div>
           </div>
         </div>
@@ -256,6 +474,407 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!--Skills Section-->
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Soft skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Concentration</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Independence</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Lifelong Learning</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem solving</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Decomposion</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Refactoring</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Googling & Prompting</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kazakh & Russian Languages</h3>
+                  <p>Native, Fluent</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>English Language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Hard skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Backend Development</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Software Engineering</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Software Architecture and Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DevOps</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Frontend Development</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Science</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+<!-- Certification Section -->
+
+<!-- TODO add skip buttons to certificate scrolling -->
+<!-- TODO Fix pop-up certificate when clicking image with openModal function in js -->
+
+<section id="certifications">
+  <p class="section__text__p1">Browse My Licence and Awards</p>
+  <h1 class="title">Certifications</h1>
+  <div class="certifications-container">
+    <div class="certification-item">
+      <!-- TODO fix it for popup -->
+      <!--<img
+        src="./assets/certification-1.png"
+        alt="Certification 1"
+        class="certification-img"
+        onclick="openModal('certification-1.png')"
+      />-->
+      <img
+      src="./assets/certification-1.png"
+      alt="Certification 1"
+      class="certification-img"
+      onclick="window.open('./assets/certification-1.png', '_blank')"
+      />
+      <h2 class="certification-title">Back-End Development</h2>
+      <!--
+      <p>Issued Dec 2023</p>
+      <br />
+      -->
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://www.coursera.org/account/accomplishments/records/YRJ6CPNAAXPL', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+    <div class="certification-item">
+      <img
+        src="./assets/certification-2.png"
+        alt="Certification 2"
+        class="certification-img"
+        onclick="window.open('./assets/certification-2.png', '_blank')"
+      />
+      <h2 class="certification-title">Django Web Framework</h2>
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://www.coursera.org/account/accomplishments/records/8KYAJGL34NG4', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+    <div class="certification-item">
+      <img
+        src="./assets/certification-3.png"
+        alt="Certification 3"
+        class="certification-img"
+        onclick="window.open('./assets/certification-3.png', '_blank')"
+      />
+      <h2 class="certification-title">SQL Databases for Back-End Development</h2>
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://www.coursera.org/account/accomplishments/records/XHQTGVYADJYX', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+    <div class="certification-item">
+      <img
+        src="./assets/certification-4.png"
+        alt="Certification 4"
+        class="certification-img"
+        onclick="window.open('./assets/certification-4.png', '_blank')"
+      />
+      <h2 class="certification-title">Programming in Python</h2>
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://www.coursera.org/account/accomplishments/certificate/JD368QGTGDXU', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+    <div class="certification-item">
+      <img
+        src="./assets/certification-5.png"
+        alt="Certification 5"
+        class="certification-img"
+        onclick="window.open('./assets/certification-5.png', '_blank')"
+      />
+      <h2 class="certification-title">English Language</h2>
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://www.coursera.org/account/accomplishments/verify/TXRCRAVRW3ZU', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+    <div class="certification-item">
+      <img
+        src="./assets/certification-6.png"
+        alt="Certification 6"
+        class="certification-img"
+        onclick="window.open('./assets/certification-6.png', '_blank')"
+      />
+      <h2 class="certification-title">Data Science</h2>
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://www.coursera.org/account/accomplishments/verify/5YH9Y8GYUEMA', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+    <div class="certification-item">
+      <img
+        src="./assets/certification-7.png"
+        alt="Certification 7"
+        class="certification-img"
+        onclick="window.open('./assets/certification-7.png', '_blank')"
+      />
+      <h2 class="certification-title">Python for Data Science, AI & Development</h2>
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://www.coursera.org/account/accomplishments/verify/C2SZXWLQ5S2H', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+    <div class="certification-item">
+      <img
+        src="./assets/certification-8.png"
+        alt="Certification 8"
+        class="certification-img"
+        onclick="window.open('./assets/certification-8.png', '_blank')"
+      />
+      <h2 class="certification-title">Python Project for Data Science</h2>
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://www.coursera.org/account/accomplishments/verify/BX2FWSH2M5PD', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+    <div class="certification-item">
+      <img
+        src="./assets/certification-9.png"
+        alt="Certification 9"
+        class="certification-img"
+        onclick="window.open('./assets/certification-9.png', '_blank')"
+      />
+      <h2 class="certification-title">Interactive SQL Simulator</h2>
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://stepik.org/cert/1726586', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+    <div class="certification-item">
+      <img
+        src="./assets/award-1.png"
+        alt="Certification 10"
+        class="certification-img"
+        onclick="window.open('./assets/award-1.png', '_blank')"
+      />
+      <h2 class="certification-title">NLP model project, 3-place Award</h2>
+      
+      <p>KZ Almaty grand tournament "I am an Entrepreneur" 
+        <br/>Direction "Communication and Information".
+      </p>
+      <br />
+     
+      <button
+        class="btn btn-color-2 certification-btn"
+        onclick="window.open('https://cmab.kz/index.php/obuchenie/ya-predprenimatel', '_blank')"
+      >
+        View Credentials
+      </button>
+    </div>
+
+
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+
+
+    <!--Projects Section-->
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -269,17 +888,25 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Social Media API</h2>
+            <p>
+              REST API service of social media clone that hosted on 
+              DigitalOcean with Authentication, Docker features,
+              CI/CD pipeline with Unit Tests, Postgres as Database, 
+              and Documented via OpenAPI. 
+            </p>
+            <br />
             <div class="btn-container">
+              <!--onclick="location.href='https://github.com/dotpep/social-media-api'"-->
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/dotpep/social-media-api', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://dotpep.xyz/docs', '_blank')"
               >
                 Live Demo
               </button>
@@ -293,17 +920,25 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">E-commerse Website</h2>
+            <p>
+              Monolith containerized 
+              E-Commerce website with feature of Payment, 
+              PostgreSQL database, UI/UX,
+              performed with Celery/Redis,
+              PDF payment invoice generation and has website Admin Panel.
+            </p>
+            <br />
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/dotpep/fullstack-ecommerce', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/dotpep/fullstack-ecommerce', '_blank')"
               >
                 Live Demo
               </button>
@@ -317,17 +952,23 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Marketplace API</h2>
+            <p>Clean DDD Marketplace API,
+              clean and well-structured, architected/designed 
+              API Project, via Django Ninja, PostgreSQL database, 
+              Docker Containerization and Makefile shortcuts.
+            </p>
+            <br />
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://dotpep.xyz/docs', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://dotpep.xyz/docs', '_blank')"
               >
                 Live Demo
               </button>
@@ -341,28 +982,55 @@
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
+
+      <p class="github-message">
+        My other projects are available in my <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub repository</a>. Click to check them out right now!
+      </p>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+
     </section>
+
+    <!--Contact Section-->
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="./assets/msg-mail.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:kelgenbaevdidar7@gmail.com" target="_blank" rel="noopener noreferrer">kelgenbaevdidar7@gmail.com</a></p>
         </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/msg-mail.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://t.me/dotpep" target="_blank" rel="noopener noreferrer">Telegram</a></p>
+        </div>
+
         <div class="contact-info-container">
           <img
             src="./assets/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/didar-k" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         </div>
+
       </div>
+      
     </section>
     <footer>
       <nav>
@@ -370,12 +1038,18 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p >Copyright &#169; 2024 Didar Kelgenbayev (dotpep). All Rights Reserved. 
+        <br />
+        <br />
+        <a class="blue-link" href="https://github.com/dotpep/my-portfolio-website" target="_blank" rel="noopener noreferrer">GitHub link to this portfolio project</a>
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>
