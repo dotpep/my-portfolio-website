@@ -185,7 +185,7 @@ section {
 
 .section__pic-container {
   display: flex;
-  margin: auto 0;
+  margin: auto 2rem auto 0; /* Adjust the margin as needed */
 }
 
 .section__pic-container img {

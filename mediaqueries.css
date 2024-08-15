@@ -1,16 +1,4 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
+/* TODO fix some problems with responsive design for mobile phones */
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
@@ -26,6 +14,7 @@
   #profile,
   .section-container {
     display: block;
+    text-align: center;
   }
   .arrow {
     display: none;
@@ -45,6 +34,12 @@
   .about-containers {
     margin-top: 0;
   }
+  .section__text {
+    margin-top: 4rem; /* Space between image and text */
+  }
+  .socials {
+    margin-top: 6rem; /* Ensure space between about text and social links */
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -53,7 +48,7 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: auto;
     margin-bottom: 0;
   }
   article {
@@ -90,6 +85,14 @@
     width: auto;
     height: 46vw;
     justify-content: center;
+    margin: 0 auto 6rem; /* Space below image */
+  }
+  .section__text {
+    margin-top: 2rem; /* Space between image and text */
+    text-align: center;
+  }
+  .socials {
+    margin-top: 2rem; /* Space between about text and social links */
   }
   .section__text__p2 {
     font-size: 1.25rem;
