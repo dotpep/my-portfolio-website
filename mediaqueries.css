@@ -100,4 +100,9 @@
   .text-container {
     text-align: justify;
   }
+  
+  .section__pic-container img {
+    height: 180px;
+    width: 180px;
+  }
 }
