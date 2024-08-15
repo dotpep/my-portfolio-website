@@ -54,7 +54,7 @@
   }
   #profile {
     height: 83vh;
-    margin-bottom: 0;
+    margin-bottom: 8rem;
   }
   article {
     font-size: 1rem;
@@ -108,5 +108,10 @@
 
   .certification-item {
     width: 600px;
+  }
+
+  #socials-container img {
+    height: 32px;
+    width: 32px;
   }
 }
