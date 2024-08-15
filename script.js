@@ -4,3 +4,9 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+function scrollCertifications(direction) {
+  const container = document.querySelector('.certifications-container');
+  const scrollAmount = container.clientWidth / 2;
+  container.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+}

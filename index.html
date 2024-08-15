@@ -675,23 +675,21 @@
       />
     </section>
 
-<!-- Certification Section -->
+<!-- CERTIFICATION SECTION -->
 
 <!-- TODO add skip buttons to certificate scrolling -->
-<!-- TODO Fix pop-up certificate when clicking image with openModal function in js -->
 
 <section id="certifications">
   <p class="section__text__p1">Browse My Licence and Awards</p>
   <h1 class="title">Certifications</h1>
+
+  <div class="certifications-wrapper">
+    <button class="scroll-btn left-btn" onclick="scrollCertifications(-1)">
+      &#10094;
+    </button>
+
   <div class="certifications-container">
     <div class="certification-item">
-      <!-- TODO fix it for popup -->
-      <!--<img
-        src="./assets/certification-1.png"
-        alt="Certification 1"
-        class="certification-img"
-        onclick="openModal('certification-1.png')"
-      />-->
       <img
       src="./assets/certification-1.png"
       alt="Certification 1"
@@ -699,10 +697,6 @@
       onclick="window.open('./assets/certification-1.png', '_blank')"
       />
       <h2 class="certification-title">Back-End Development</h2>
-      <!--
-      <p>Issued Dec 2023</p>
-      <br />
-      -->
       <button
         class="btn btn-color-2 certification-btn"
         onclick="window.open('https://www.coursera.org/account/accomplishments/records/YRJ6CPNAAXPL', '_blank')"
@@ -861,8 +855,13 @@
       </button>
     </div>
 
-
   </div>
+
+  <button class="scroll-btn right-btn" onclick="scrollCertifications(1)">
+    &#10095;
+  </button>
+</div>
+
   <img
     src="./assets/arrow.png"
     alt="Arrow icon"

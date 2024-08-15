@@ -430,12 +430,89 @@ article .icon {
   align-items: center;
 }
 
-.certifications-container {
+/*.certifications-container {
   display: flex;
   overflow-x: auto;
   padding: 2rem 0;
   gap: 1.5rem;
+}*/
+
+/* SCROLLING CERTIFICATES */
+.certifications-container {
+  display: flex;
+  overflow-x: scroll; /* Keeps the scroll feature while hiding the scrollbar */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  -webkit-overflow-scrolling: touch; /* Enhances scroll on touch devices */
+  padding: 2rem 0;
+  gap: 1.5rem;
 }
+
+.certifications-container::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar on WebKit browsers */
+}
+
+.certifications-container {
+  -ms-overflow-style: none;  /* Hides the scrollbar on IE and Edge */
+  scrollbar-width: none;  /* Hides the scrollbar on Firefox */
+}
+
+.certification-item {
+  flex: 0 0 auto; /* Prevents the items from shrinking */
+  width: 300px; /* Adjust the width to fit your design */
+  box-sizing: border-box;
+}
+
+
+/* CERTIFICATIONS WRAPPER */
+
+.certifications-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.certifications-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 2rem 0;
+  gap: 1.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.certifications-container::-webkit-scrollbar {
+  display: none;
+}
+
+.certification-item {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: start;
+}
+
+.scroll-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  color: #333;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+.left-btn {
+  position: absolute;
+  left: -3rem;
+}
+
+.right-btn {
+  position: absolute;
+  right: -3rem;
+}
+
+/* CERTs SECTION continue */
 
 .certification-item {
   width: 90%;

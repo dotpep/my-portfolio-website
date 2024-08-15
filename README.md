@@ -10,6 +10,8 @@ original source template: https://github.com/Ade-mir/html-css-js-portfolio-tutor
 - [ ] make dark and white theme swapper
 
 - [ ] replace cv, resume pdf files with my actual resumes and cvs
+- [ ] make certificates in pdf format
+- [x] add wrapper and buttons to scroll certificates
 
 ### Need to be Fixed
 
