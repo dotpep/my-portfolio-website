@@ -6,6 +6,14 @@ original source template: https://github.com/Ade-mir/html-css-js-portfolio-tutor
 
 - [ ] there is many todo's that I'm writed directly on code, check it
 - [ ] i need to make it with DB connected
+- [ ] make ru, end, kaz swapper
+- [ ] make dark and white theme swapper
+
+- [ ] replace cv, resume pdf files with my actual resumes and cvs
+
+### Need to be Fixed
+
+- [ ] in phone version in profile section text "Hello, I'm and my Name" is above of my profile circle picture (in edge's default setted to website dark theme it looks very interesting and may be Cool, that text top of my picture)
 
 ## Deploying Log code to digitalocean droplet with subdomain
 
