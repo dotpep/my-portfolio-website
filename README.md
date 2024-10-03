@@ -9,9 +9,15 @@ original source template: https://github.com/Ade-mir/html-css-js-portfolio-tutor
 - [ ] make ru, end, kaz swapper
 - [ ] make dark and white theme swapper
 
-- [ ] replace cv, resume pdf files with my actual resumes and cvs
+- [ ] replace cv, resume pdf files with my actual resumes and cvs (View CV eng, and View CV rus assign with my CV, Resume)
 - [ ] make certificates in pdf format
 - [x] add wrapper and buttons to scroll certificates
+
+- [x] add Telegram icon on first section below My Socials text
+- [x] Correct About Section
+- [x] Correct Experience, Skills Section
+- [ ] Rewise project section
+- [ ] write SEO optimization on <head>
 
 ### Need to be Fixed
 
