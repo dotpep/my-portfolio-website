@@ -2,6 +2,12 @@
 
 original source template: https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2
 
+## Deploy instruction
+
+- `cd /var/www/portfolio.dotpep.xyz`
+- `git pull`
+- `sudo systemctl reload nginx`
+
 ## TODO
 
 - [ ] there is many todo's that I'm writed directly on code, check it
